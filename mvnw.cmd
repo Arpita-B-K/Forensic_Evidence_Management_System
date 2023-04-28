@@ -1,4 +1,4 @@
-@REM ----------------------------------------------------------------------------
+@REM --------------------------------------------------------------------------
 @REM Licensed to the Apache Software Foundation (ASF) under one
 @REM or more contributor license agreements.  See the NOTICE file
 @REM distributed with this work for additional information
@@ -15,9 +15,9 @@
 @REM KIND, either express or implied.  See the License for the
 @REM specific language governing permissions and limitations
 @REM under the License.
-@REM ----------------------------------------------------------------------------
+@REM --------------------------------------------------------------------------
 
-@REM ----------------------------------------------------------------------------
+@REM --------------------------------------------------------------------------
 @REM Maven Start Up Batch script
 @REM
 @REM Required ENV vars:
@@ -31,7 +31,7 @@
 @REM     e.g. to debug Maven itself, use
 @REM set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
 @REM MAVEN_SKIP_RC - flag to disable loading of mavenrc files
-@REM ----------------------------------------------------------------------------
+@REM --------------------------------------------------------------------------
 
 @REM Begin all REM lines with '@' in case MAVEN_BATCH_ECHO is 'on'
 @echo off
