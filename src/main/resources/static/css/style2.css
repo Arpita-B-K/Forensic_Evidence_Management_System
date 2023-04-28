@@ -1,0 +1,60 @@
+body{
+	background:#e2e2e2!important;
+}
+.bg-primary{
+	background:#c5aa6a !important;
+}
+.banner{
+	width:100%;
+	height:93vh;
+	background:#808080;
+	background-size:cover;
+	color:white;
+}
+
+@media only screen and (max-width:600px){
+	.sidebar{
+	display:none;
+	width:80% !important;
+	background:white;
+	position:fixed;
+	height:100vh;
+	padding-top:20px;
+}
+.content{
+	margin-left:0% 1important;
+}
+
+	
+}	
+
+.sidebar{
+	width:18%;
+	background:white;
+	position:fixed;
+	height:100%;
+	padding-top:45px;
+}
+.sidebar a{
+	display:block;
+	width:100%;
+	padding:10px 25px;
+	text-decoration:none;
+	color:gray;
+}
+
+.sidebar a:hover{
+	background:#e2e2e2;
+}
+.sidebar .divider{
+	height:.5px;
+	width:100%;
+	background:#e2e2e2;
+	margin-top:10px;
+}
+
+.content{
+	margin-left:20%;
+}
+
+

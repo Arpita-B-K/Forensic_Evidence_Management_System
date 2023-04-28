@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  th:replace="base2::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Forensic Management System</title>
+
+
+</head>
+<body>
+<section>
+	<div class="container">
+		<h1>Forensic Management System</h1>
+		<hr>
+		<h2>Save Evidence</h2>
+
+		<form action="#" th:action="@{/evidence/saveEvidence}" th:object="${evidence}"
+			method="POST">
+				<input type="hidden" th:field="*{id}"
+				class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{name}"
+				placeholder="evidence address" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{address}"
+				placeholder="evidence address" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{location_found}"
+				placeholder="location found" class="form-control mb-4 col-4">
+				
+				<input type="date" th:field="*{received_date}"
+				placeholder="received date" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{receiving_method}"
+				placeholder="receiving_method" class="form-control mb-4 col-4">
+				
+				<button type="submit"  class="btn btn-info col-2"> Save Evidence</button>
+		</form>
+		
+		<hr>
+		
+		<a th:href = "@{/evidence/open-evidence}"> Back to List</a>
+	</div>
+	</section>
+</body>
+</html>

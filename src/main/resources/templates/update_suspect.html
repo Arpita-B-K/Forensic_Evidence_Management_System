@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  th:replace="base2::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Forensic Management System</title>
+
+
+</head>
+<body>
+<section>
+	<div class="container">
+		<h1>Forensic Management System</h1>
+		<hr>
+		<h2>Save Suspect</h2>
+
+		<form action="#" th:action="@{/suspect/saveSuspect}" th:object="${suspect}"
+			method="POST">
+			<input type="hidden" th:field="*{id}"
+				class="form-control mb-4 col-4">
+			
+			<input type="text" th:field="*{name}"
+				placeholder="Case Name" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{address}"
+				placeholder="Address" class="form-control mb-4 col-4">
+				
+				
+				
+				<button type="submit"  class="btn btn-info col-2">Udate Suspect</button>
+		</form>
+		
+		<hr>
+		
+		<a th:href = "@{/suspect/open-suspect}"> Back to List</a>
+	</div>
+	</section>
+</body>
+</html>

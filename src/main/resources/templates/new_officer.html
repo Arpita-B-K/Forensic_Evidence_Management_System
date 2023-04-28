@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  th:replace="base2::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Forensic Management System</title>
+
+
+</head>
+<body>
+<section>
+	<div class="container">
+		<h1>Forensic Management System</h1>
+		<hr>
+		<h2>Save Officer</h2>
+
+		<form action="#" th:action="@{/officer/saveOfficer}" th:object="${officer}"
+			method="POST">
+			<input type="text" th:field="*{name}"
+				placeholder="Officer Name" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{designation}"
+				placeholder="Designation" class="form-control mb-4 col-4">
+				
+				<input type="email" th:field="*{email}"
+				placeholder="enter email" class="form-control mb-4 col-4">
+				
+				<label for="case_id">Case:</label>
+			<select th:field="*{forensicCase.id}" id="case_id">
+				<option th:value="-1">Select a Case</option>
+				<option th:each = "forensicCase : ${cases}"
+						th:value = "${forensicCase.id}"
+						th:text = "${forensicCase.name}"
+						th:selected="${officer.forensicCase != -1 && officer.forensicCase.id == forensicCase.id}">
+				</option>
+				
+			</select>
+			<br>
+			<br>
+				
+				<button type="submit"  class="btn btn-info col-2"> Save Officer</button>
+		</form>
+		
+		<hr>
+		
+		<a th:href = "@{/officer/open-officer}"> Back to List</a>
+	</div>
+	</section>
+</body>
+</html>
