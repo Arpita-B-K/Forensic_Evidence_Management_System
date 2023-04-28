@@ -1,5 +1,5 @@
 #!/bin/sh
-# ----------------------------------------------------------------------------
+# --------------------------------------------------------------------------
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
 # distributed with this work for additional information
@@ -16,9 +16,9 @@
 # KIND, either express or implied.  See the License for the
 # specific language governing permissions and limitations
 # under the License.
-# ----------------------------------------------------------------------------
+# --------------------------------------------------------------------------
 
-# ----------------------------------------------------------------------------
+# --------------------------------------------------------------------------
 # Maven Start Up Batch script
 #
 # Required ENV vars:
@@ -32,7 +32,7 @@
 #     e.g. to debug Maven itself, use
 #       set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
 #   MAVEN_SKIP_RC - flag to disable loading of mavenrc files
-# ----------------------------------------------------------------------------
+# --------------------------------------------------------------------------
 
 if [ -z "$MAVEN_SKIP_RC" ] ; then
 
@@ -203,10 +203,10 @@ if [ -z "$BASE_DIR" ]; then
   exit 1;
 fi
 
-##########################################################################################
+########################################################################################
 # Extension to allow automatically downloading the maven-wrapper.jar from Maven-central
 # This allows using the maven wrapper in projects that prohibit checking in binary data.
-##########################################################################################
+########################################################################################
 if [ -r "$BASE_DIR/.mvn/wrapper/maven-wrapper.jar" ]; then
     if [ "$MVNW_VERBOSE" = true ]; then
       echo "Found .mvn/wrapper/maven-wrapper.jar"
